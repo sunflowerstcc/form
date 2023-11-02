@@ -14,19 +14,23 @@
     <form action="" method="post">
         <label for="nome">Seu Nome</label>
         <br>
-        <input autocomplete="off" type="text" id="nome" name="nome">
+        <input class="text-input" autocomplete="off" type="text" id="nome" name="nome">
         <br>
         <label for="username">Seu Nome de Usuario</label>
         <br>
-        <input autocomplete="off" type="text" id="username" name="username">
+        <input class="text-input" autocomplete="off" type="text" id="username" name="username">
         <br>
         <label for="email">Seu Email</label>
         <br>
-        <input autocomplete="off" type="text" id="email" name="email">
+        <input class="text-input" autocomplete="off" type="text" id="email" name="email">
         <br>
         <label for="senha">Sua Senha</label>
         <br>
-        <input autocomplete="off" type="text" id="senha" name="senha">
+        <div class="pass" >
+            
+            <input class="text-input" autocomplete="off" type="password" id="senha" name="senha">
+            <span class="pass-icon" onclick="pass()"><img id="img-pass" width="20px" height="" src="olho.png" alt=""></span>
+        </div>
         <br>
         <input type="submit" id="nome" name="name" value="enviar">
         <br>

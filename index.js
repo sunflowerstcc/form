@@ -52,3 +52,17 @@ function sendForm(e) {
   }).then(()=>  window.location.replace('obrigado.html'))
  
 }
+
+
+// mostrar senha
+function pass(){
+  const senha = document.querySelector("#senha");
+  const img_pass = document.querySelector("#img-pass");
+  if(senha.type === `text`){
+    senha.type = `password`
+    img_pass.src = `olho.png`
+  }else{
+    img_pass.src = `invisivel.png`
+    senha.type = `text`
+  }  
+}
